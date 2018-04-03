@@ -15,4 +15,5 @@ return {
   -- },
   ["workshop-1181077385"]={ configuration_options={  }, enabled=true },
   ["workshop-1217385169"]={ configuration_options={  }, enabled=true },
+  ["workshop-1166220990"]={ configuration_options={ language=2 }, enabled=true },
 }
