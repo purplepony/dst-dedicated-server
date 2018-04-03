@@ -28,4 +28,5 @@ return {
     },
     enabled=true
   },
+  ["workshop-786654500"]={ configuration_options={ active=true }, enabled=true }
 }
