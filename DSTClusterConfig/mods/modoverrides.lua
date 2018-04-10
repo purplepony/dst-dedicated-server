@@ -34,6 +34,33 @@ return {
   },
   -- Finder mod (helps managing resources by highlighting chests with active item) - https://steamcommunity.com/sharedfiles/filedetails/?id=786654500
   ["workshop-786654500"]={ configuration_options={ active=true }, enabled=true }
+  ["workshop-404161345"]={
+    configuration_options={
+      Allow_Harvesting="true",
+      Drop_Content="true",
+      Fortify_Building=0,
+      Ownership="Multi",
+      Player_Trap="false",
+      Share_Container="false",
+      Share_Equipments="true"
+    },
+    enabled=true
+  },
+  ["workshop-599501490"]={
+    configuration_options={
+      Add_Allow=true,
+      Add_AllowOnlineOnly=false,
+      DefaultModifyMode=false,
+      Del_Allow=true,
+      Del_AllowLast=true,
+      LogLevel=3,
+      MaxOwners=10,
+      MaxOwnersWarn=8,
+      ModCmds=false,
+      Win_Position="left",
+      keybind=0,
+      keybind_server=111
+    },
   -- Super Wall DST mod - Optional, potentially overkill method to deal with griefers. Can even be used in PvP mode. https://steamcommunity.com/sharedfiles/filedetails/?id=785295023
   ["workshop-785295023"]={
     configuration_options={
@@ -64,5 +91,48 @@ return {
       recipe_wall=true
     },
     enabled=true 
+  },
+  -- Ownership mod - Added security against griefing with per-item access control lists. https://steamcommunity.com/sharedfiles/filedetails/?id=404161345
+  ["workshop-404161345"]={
+    configuration_options={
+      -- Allow or prevent harvesting crops
+      Allow_Harvesting="true",
+      -- Drop container contents. Containers always drop everything if "Share containers" is enabled.
+      Drop_Content="true",
+      -- Allow fortifying of walls not owned by the player.
+      Fortify_Building=0,
+      -- Public|Single|Multi - Tells whether ownership is disabled, single-user, or access control list
+      Ownership="Multi",
+      -- Players will trigger eachother's traps and take damage accordingly.
+      Player_Trap="false",
+      -- If disabled, players will not be able to access chests or other containers if they're not on the access list.
+      Share_Container="false",
+      -- If disabled, players will not be able to pick up someone else's equipment if dropped.
+      Share_Equipments="true"
+    },
+    enabled=true
+  },
+  ["workshop-599501490"]={
+    configuration_options={
+      -- Allow adding owners
+      Add_Allow=true,
+      -- Only allow adding owners who are currently online
+      Add_AllowOnlineOnly=false,
+      DefaultModifyMode=false,
+      -- Allow removal of owners in general (revoke access for someone)
+      Del_Allow=true,
+      -- Allow removal of last owner (makes item public)
+      Del_AllowLast=true,
+      LogLevel=3,
+      MaxOwners=10,
+      MaxOwnersWarn=8,
+      ModCmds=false,
+      -- Which side of screen access control editor appears on (left|right)
+      Win_Position="left",
+      keybind=0,
+      -- Hotkey to toggle access control edit interface. 111 = 'Q'
+      keybind_server=111
+    },
+    enabled=true
   },
 }

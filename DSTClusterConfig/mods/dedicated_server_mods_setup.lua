@@ -16,6 +16,10 @@ ServerModSetup("378160973")
 ServerModSetup("786654500")
 -- Super Wall DST
 ServerModSetup("785295023")
+-- Ownership
+ServerModSetup("404161345")
+-- Modify Ownership
+ServerModSetup("599501490")
 
 --ServerModCollectionSetup takes a string of a specific mod's Workshop id. It will download all the mods in the collection and install them to the mod directory on boot.
 	--The Workshop id can be found at the end of the url to the collection's Workshop page.
