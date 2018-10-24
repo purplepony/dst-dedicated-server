@@ -21,6 +21,8 @@ popd 1&>/dev/null
 # Set up cluster for forest and cave shards.
 CLUSTER_PATH="$HOME/.klei/DoNotStarveTogether/$CLUSTER_NAME"
 if [ ! -d "$CLUSTER_PATH" ]; then
+  mkdir $HOME/.klei
+  mkdir $HOME/.klei/DoNotStarveTogether
   mkdir $CLUSTER_PATH
   mkdir $CLUSTER_PATH/Master
   mkdir $CLUSTER_PATH/Caves
